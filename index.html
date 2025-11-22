@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Viral Storefront | Steve Nooshinfar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, .serif-font {
+            font-family: 'Bodoni Moda', serif;
+        }
+        .hero-text {
+            line-height: 0.9;
+            letter-spacing: -0.05em;
+        }
+        .btn-black {
+            background-color: #000;
+            color: #fff;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .btn-black:hover {
+            background-color: #333;
+            transform: scale(1.02);
+            padding-left: 2.5rem;
+        }
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            background: #000;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        /* استایل مخصوص ویدیوها */
+        .video-wrapper video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.7s ease;
+        }
+        .video-wrapper:hover video {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-black selection:text-white">
+
+    <!-- Announcement Bar -->
+    <div class="marquee-container text-xs tracking-[0.2em] uppercase font-bold">
+        <div class="marquee-content">
+            Accepting Clients for Q4 &nbsp;&bull;&nbsp; Black Friday Priority Access &nbsp;&bull;&nbsp; Elevate Your Brand Identity &nbsp;&bull;&nbsp; UK &bull; USA &bull; UAE &nbsp;&bull;&nbsp; Accepting Clients for Q4 &nbsp;&bull;&nbsp; Black Friday Priority Access &nbsp;&bull;&nbsp; Elevate Your Brand Identity &nbsp;&bull;&nbsp; UK &bull; USA &bull; UAE &nbsp;&bull;&nbsp;
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center px-8 py-6 border-b border-gray-100 sticky top-0 bg-white/90 backdrop-blur z-50">
+        <div class="text-2xl font-bold serif-font tracking-tighter">STEVE NOOSHINFAR</div>
+        <div class="flex gap-4">
+             <a href="mailto:steve.nooshinfar@gmail.com" class="hidden md:block px-6 py-2 text-sm uppercase tracking-widest hover:text-gray-600 transition-colors">
+                Email Us
+            </a>
+            <a href="https://calendar.app.google/25eUwZkuJYf3w1Yp9" target="_blank" class="border border-black px-6 py-2 text-sm uppercase tracking-widest hover:bg-black hover:text-white transition-colors">
+                Book Consultation
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-[90vh] flex flex-col justify-center px-6 md:px-20">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <p class="text-gray-500 uppercase tracking-[0.3em] text-sm mb-6">For Ambitious Brands Only</p>
+                <h1 class="text-6xl md:text-8xl font-bold mb-8 hero-text">
+                    MAKE THEM <br>
+                    <span class="italic font-light">OBSESSED</span> <br>
+                    WITH YOU.
+                </h1>
+                <p class="text-xl text-gray-600 mb-10 max-w-md font-light leading-relaxed">
+                    Your products are premium. Your content should be too. We transform simple phone footage into "Vogue-Level" campaigns in 48 hours.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#packages" class="btn-black px-10 py-4 text-sm uppercase tracking-widest flex items-center gap-2 w-fit">
+                        View Packages <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                    <div class="flex items-center gap-3 px-4">
+                        <div class="flex -space-x-2">
+                            <div class="w-8 h-8 rounded-full bg-gray-200 border border-white"></div>
+                            <div class="w-8 h-8 rounded-full bg-gray-300 border border-white"></div>
+                            <div class="w-8 h-8 rounded-full bg-gray-400 border border-white"></div>
+                        </div>
+                        <span class="text-xs font-bold text-gray-500">Trusted by 20+ Brands</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Visual Showcase (Static Hero Image) -->
+            <div class="order-1 md:order-2 relative">
+                <div class="aspect-[4/5] bg-gray-100 relative overflow-hidden rounded-sm">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover" alt="Fashion Model">
+                    <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur p-4 max-w-xs shadow-xl">
+                        <p class="serif-font italic text-lg mb-1">"The Conversion Kit"</p>
+                        <div class="h-0.5 w-full bg-gray-200 rounded-full overflow-hidden">
+                            <div class="h-full w-2/3 bg-black"></div>
+                        </div>
+                        <div class="flex justify-between text-xs mt-2 text-gray-500 font-mono">
+                            <span>Views: +154%</span>
+                            <span>Sales: +40%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Grid -->
+    <section class="py-24 bg-black text-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 border-t border-gray-800 pt-12">
+                <div class="space-y-4">
+                    <span class="text-4xl serif-font italic opacity-50">01</span>
+                    <h3 class="text-2xl font-bold uppercase">Collection Launch</h3>
+                    <p class="text-gray-400 font-light">Got a new drop? We create the hype. Teasers, countdowns, and high-energy showcases that sell out inventory.</p>
+                </div>
+                <div class="space-y-4">
+                    <span class="text-4xl serif-font italic opacity-50">02</span>
+                    <h3 class="text-2xl font-bold uppercase">UGC Polishing</h3>
+                    <p class="text-gray-400 font-light">Don't post raw influencer videos. We edit them to match your brand aesthetic, adding captions and music that fits.</p>
+                </div>
+                <div class="space-y-4">
+                    <span class="text-4xl serif-font italic opacity-50">03</span>
+                    <h3 class="text-2xl font-bold uppercase">Lookbooks</h3>
+                    <p class="text-gray-400 font-light">Turn static photos into dynamic, moving collages. Perfect for Instagram Stories and Pinterest.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Preview (VIDEOS HERE) -->
+    <section class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="text-4xl md:text-6xl serif-font">Curated <span class="italic text-gray-400">Work</span></h2>
+                <a href="https://vimeo.com/stevenooshinfar" class="text-sm underline uppercase tracking-widest hover:text-gray-500">See All Projects</a>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-4">
+                
+                <!-- VIDEO 1 -->
+                <!-- نام فایل باید vid1.mp4 و عکس img1.jpg باشد -->
+                <div class="video-wrapper aspect-[9/16] relative group cursor-pointer overflow-hidden bg-gray-100">
+                    <video autoplay loop muted playsinline poster="assets/img1.jpg">
+                        <source src="assets/vid1.mp4" type="video/mp4">
+                        <!-- Fallback اگر ویدیو لود نشد -->
+                        <img src="assets/img1.jpg" alt="Project 1">
+                    </video>
+                    <!-- لایه محافظ -->
+                    <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-all"></div>
+                </div>
+
+                <!-- VIDEO 2 -->
+                <!-- نام فایل باید vid2.mp4 و عکس img2.jpg باشد -->
+                <div class="video-wrapper aspect-[9/16] relative group cursor-pointer overflow-hidden bg-gray-100 md:mt-12">
+                    <video autoplay loop muted playsinline poster="assets/img2.jpg">
+                        <source src="assets/vid2.mp4" type="video/mp4">
+                        <img src="assets/img2.jpg" alt="Project 2">
+                    </video>
+                    <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-all"></div>
+                </div>
+
+                <!-- VIDEO 3 -->
+                <!-- نام فایل باید vid3.mp4 و عکس img3.jpg باشد -->
+                <div class="video-wrapper aspect-[9/16] relative group cursor-pointer overflow-hidden bg-gray-100">
+                    <video autoplay loop muted playsinline poster="assets/img3.jpg">
+                        <source src="assets/vid3.mp4" type="video/mp4">
+                        <img src="assets/img3.jpg" alt="Project 3">
+                    </video>
+                    <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-all"></div>
+                </div>
+
+                <!-- VIDEO 4 -->
+                <!-- نام فایل باید vid4.mp4 و عکس img4.jpg باشد -->
+                <div class="video-wrapper aspect-[9/16] relative group cursor-pointer overflow-hidden bg-gray-100 md:mt-12">
+                    <video autoplay loop muted playsinline poster="assets/img4.jpg">
+                        <source src="assets/vid4.mp4" type="video/mp4">
+                        <img src="assets/img4.jpg" alt="Project 4">
+                    </video>
+                    <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-all"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="packages" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-4xl font-bold serif-font mb-4">Investment</h2>
+                <p class="text-gray-500">Transparent pricing for high-growth brands. No hidden agency fees.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Starter -->
+                <div class="bg-white p-10 shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                    <h3 class="serif-font text-2xl italic mb-2">The Essentials</h3>
+                    <div class="text-3xl font-bold mb-6">$297</div>
+                    <p class="text-sm text-gray-500 mb-8 border-b pb-8">Perfect for refreshing your feed with high-quality edits.</p>
+                    <ul class="space-y-4 text-sm mb-8 flex-1">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-black"></i> 3 High-End Reels</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-black"></i> Trending Audio Selection</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-black"></i> Aesthetic Color Grading</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-black"></i> 3 Days Delivery</li>
+                    </ul>
+                    <a href="https://wa.me/971562450103?text=Hi%20Steve,%20interested%20in%20The%20Essentials%20package" class="block text-center border border-black py-3 text-sm uppercase tracking-widest hover:bg-black hover:text-white transition-colors">Purchase</a>
+                </div>
+
+                <!-- Growth (Focus) -->
+                <div class="bg-black text-white p-10 shadow-2xl transform md:-translate-y-4 relative flex flex-col">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black px-4 py-1 text-xs font-bold uppercase tracking-widest shadow-md">Best Seller</div>
+                    <h3 class="serif-font text-2xl italic mb-2">Brand Elevation</h3>
+                    <div class="text-3xl font-bold mb-6">$597</div>
+                    <p class="text-sm text-gray-400 mb-8 border-b border-gray-800 pb-8">Enough content to dominate your niche for 2 weeks.</p>
+                    <ul class="space-y-4 text-sm mb-8 flex-1">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-white"></i> <strong>8 Premium Reels</strong></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-white"></i> Story Adaptations</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-white"></i> Custom Text Animations</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-white"></i> <strong>Two Revisions Only</strong></li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-white"></i> Thumbnails Included</li>
+                    </ul>
+                    <a href="https://wa.me/971562450103?text=Hi%20Steve,%20interested%20in%20The%20Brand%20Elevation%20package" class="block text-center bg-white text-black py-4 text-sm uppercase tracking-widest hover:bg-gray-200 transition-colors font-bold">Get Started</a>
+                </div>
+
+                <!-- Agency -->
+                <div class="bg-white p-10 shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                    <h3 class="serif-font text-2xl italic mb-2">Full Campaign</h3>
+                    <div class="text-3xl font-bold mb-6">$1,200</div>
+                    <p class="text-sm text-gray-500 mb-8 border-b pb-8">Complete creative direction for a product launch.</p>
+                    <ul class="space-y-4 text-sm mb-8 flex-1">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-black"></i> 15 Reels / TikToks</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-black"></i> 3 Ad Variations</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-black"></i> Source Files Included</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-black"></i> Priority Support</li>
+                    </ul>
+                    <a href="https://wa.me/971562450103?text=Hi%20Steve,%20interested%20in%20The%20Full%20Campaign" class="block text-center border border-black py-3 text-sm uppercase tracking-widest hover:bg-black hover:text-white transition-colors">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minimal Footer -->
+    <footer class="bg-white border-t border-gray-200 py-12 text-center">
+        <div class="mb-6">
+            <h4 class="font-bold tracking-widest text-lg">STEVE NOOSHINFAR</h4>
+            <p class="text-xs text-gray-400 mt-2">UK &bull; USA &bull; UAE</p>
+        </div>
+        <div class="flex flex-col items-center gap-4 mb-8">
+            <div class="flex justify-center gap-6">
+                <a href="https://www.linkedin.com/in/steve-nooshinfar/" target="_blank" class="text-gray-400 hover:text-black"><i class="fab fa-linkedin text-xl"></i></a>
+            </div>
+            <a href="mailto:steve.nooshinfar@gmail.com" class="text-sm text-gray-400 hover:text-black tracking-wider">steve.nooshinfar@gmail.com</a>
+            <a href="tel:+971562450103" class="text-sm text-gray-400 hover:text-black tracking-wider">+971 56 245 0103</a>
+        </div>
+        <p class="text-xs text-gray-400">&copy; 2025 Nooshinfar Creative. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
